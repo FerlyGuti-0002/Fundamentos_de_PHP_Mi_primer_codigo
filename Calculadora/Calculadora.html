@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Calculadora</title>
 </head>
 <body>
-    <h1>Datos Personales</h1>
-    <!--Creando formulario-->
-    <form action="ComprobarEdad.php" method="get">
-        <p>Nombre: <br><input type="text" name="nombre"/></p>
-        <p>Correo:  <br><input type="text" name="correo"/></p>
-        <p>Fecha de nacimiento:<input type="text" name="fecha_de_nacimiento"/></p>
-        <p><input type="submit" value="Enviar datos"/></p>
+    <h1>Mi calculadora web</h1>
+    <form action="Calculadora.php" method="POST">
+        <input type="text" name="numero1" placeholder="Número 1">
+        <input type="text" name="numero2" placeholder="Número 2">
+        <br>
+        <br><input type="radio" name="operación" value="Suma">Suma
+        <br><input type="radio" name="operación" value="Resta">Resta
+        <br><input type="radio" name="operación" value="Multiplicación">Multiplicación
+        <br><input type="radio" name="operación" value="División">División
+        <br>
+        <input type="submit" value="Calcular">
     </form>
 
     <style>
-        body
+
+    body
         {
             color: rgb(21, 21, 73);
             background-color: rgb(143, 36, 36);
             text-align: center;
-            margin-top: 3;
-            
-        }
-
-        h1{
             margin-top: 3%;
         }
 
+        h1{
+             color: rgb(21, 21, 73);
+             text-align: center;
+             margin-top: 3%;
+        }
+        
         form{
               width:300px;
               padding:30px;
@@ -37,7 +43,7 @@
               margin:auto;
               background-color:rgb(138, 52, 52);
         }
-        
+
         input{
             color: rgb(19, 19, 92);
             background-color:rgb(150, 141, 141);
