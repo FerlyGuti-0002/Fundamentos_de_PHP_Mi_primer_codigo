@@ -3,7 +3,7 @@ $número1 = $_POST["numero1"];
 $número2 = $_POST["numero2"];
 $operación = $_POST["operación"];
 
-$resultado = "";
+$resultado = "";              
 //echo "Numeros . $numero1 . " " . $numero2 . " " . $operación;
 
 if($operación == "Suma")
